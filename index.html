@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="icon" href="img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Teko:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- reset.css modern-css-reset
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>Koichi Kataoka | Web Designer</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-nav-bar container">
+        <a href="#">
+          <img class="logo" alt="Koichi Kataoka logo" src="img/logo-1.png" />
+        </a>
+        
+        <div class="nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#service">サービス内容</a></li>
+            <li><a class="nav-link" href="#about">プロフィール</a></li>
+            <li><a class="btn" href="#cta">お問い合わせ</a></li>
+          </ul>
+        </div>
+        
+        <button class="header-nav-btn">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
+    </header>
+
+    <main>
+
+
+
+    <section class="section-hero container">
+
+        <div class="hero-intro">
+          <h1 class="hero-name">KOICHI <br />KATAOKA</h1>
+          <p class="hero-job">Web Designer</p>
+        </div>
+
+          <p class="hero-description">
+            クライアント様のビジネス課題の解決を達成するためUI/UXにこだわったデザインの高品質なWebサイトを制作します。
+          </p>
+          
+          <a class="hero-btn link" href="#cta">一緒に働く&darr;</a>
+
+    </section>
+      
+      <!-- TODO:料金と見込み期間入れる -->
+      <!-- TODO:アイコンをbgで囲いたい -->
+      
+      <section class="section-service section-mt" id="service">
+
+      <div class="service" id="service">
+        <div class="container">
+          <span class="subheading">service</span>
+          <h2 class="section-title">サービス内容</h2>
+
+          <div class="section-inner">
+
+            <div class="service-card">
+                <div class="service-detail">
+                  <img class="service-icon" src="img/web-development-icon.svg" alt="web制作のアイコン">
+                  <p class="service-title">Web制作</p>
+                  <p class="service-description">デザインからコーディングまで一気通貫で承ります。</p>
+                </div>  
+            </div>
+
+            <div class="service-card">
+              <div class="service-detail">
+                <img class="service-icon" src="img/coding-icon.svg" alt="コーディングのアイコン">
+                <p class="service-title">HTML・CSSコーディング</p>
+                <p class="service-description">デザインカンプからコーディングしてWebページを制作します。</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <div class="service-detail">
+                <img class="service-icon" src="img/web-design-icon.svg" alt="webデザインのアイコン">
+                <p class="service-title">Webデザイン</p>
+                <p class="service-description">クライアント様の目的を達成するための最適なデザインをします。</p>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <section class="section-profile section-mt" id="about">
+      <div class="container">
+
+          <span class="subheading">about me</span>
+          <h2 class="section-title">プロフィール</h2>
+
+          <div class="profile-text-box">
+            <!-- TODO:もっと書けるようになったら書く -->
+            <div class="intro">
+              <b>片岡宏一（かたおかこういち）</b>
+              <p>1996年産まれの神奈川県出身。海外在住歴8年。学びが終わることのない開発に携わることを諦めきれず、意を決して独立。現在はWeb開発の猛勉強中。</p>
+                <a class="link" href="https://twitter.com/Katakataweb"
+                ><ion-icon class="icon" name="logo-twitter"></ion-icon
+                  ></a>
+            </div>
+            
+            <div class="bio">
+              <b>略歴</b>
+              <p>
+                早稲田大学：政治経済学部政治学科卒業/某ITメガベンチャーに新卒入社/教育系ベンチャーに転職/フリーランス独立
+              </p>
+            </div>
+
+            <div class="certificates">
+              <b>主な保有資格</b>
+              <ul>
+                <li>TOEIC L&R:905点</li>
+                <li>英検準1級</li>
+                <li>FP3級</li>
+                <li>統計検定3級</li>
+              </ul>
+              <p>その他の資格も取得を目指して勉強中です！</p>
+            </div>
+
+          </div>
+      </div>
+    </section>
+
+    <section class="cta section-mt container" id="cta">
+      <div class="container">
+        <span class="subheading">contact</span>
+        <h2 class="section-title">お問い合わせ</h2>
+        <p>お気軽にご相談ください！</p>
+        <a class="cta-address link" href="mailto:contact@kkwebde.com"
+          >contact@kkwebde.com</a
+        >
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">&copy; Koichi Kataoka</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
