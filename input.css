@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,900&family=Roboto:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c5364, #203a43, #0f2027) no-repeat; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Roboto", sans-serif;
+  @apply py-2 px-5 text-gray;
+}
+
+.js_intro {
+  @apply hidden;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.section-title {
+  @apply text-3xl font-bold uppercase tracking-wider;
+}
+
+.glass-card {
+  @apply bg-white backdrop-blur bg-opacity-5 py-4 px-5 rounded-xl shadow hover:bg-opacity-10 transition;
+  @apply lg:py-5 lg:px-6;
+}
+
+.tag {
+  @apply text-xs bg-cyan-950 bg-opacity-60 text-teal-200 rounded-full py-2 px-3;
+}
+
+.nav {
+  @apply -translate-y-full transition-transform duration-300 z-10 bg-cyan-950 bg-opacity-90;
+  @apply w-full rounded-xl;
+}
+
+.nav.open {
+  @apply translate-y-40;
+}
+
+.cursor {
+  position: fixed;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  left: -100px;
+  top: 50%;
+  mix-blend-mode: difference;
+  background-color: transparent;
+  z-index: 10000;
+  background-color: #fff;
+  opacity: 0.4;
+  height: 15px;
+  width: 15px;
+  transition: all 200ms ease-out;
+}
+
+.navbar-link.current {
+  transform: translateX(20px);
+  text-decoration-line: underline;
+  text-underline-offset: 0.3rem;
+  transition: all 0.2s ease-in;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    @apply text-white;
+  }
+
+  h4 {
+    @apply text-2xl font-bold text-grayLight;
+  }
+
+  h5 {
+    @apply text-lg font-bold text-grayLight;
+  }
+
+  p {
+    @apply text-base leading-normal tracking-wider;
+  }
+
+  i {
+    @apply text-xl lg:text-3xl;
+  }
+}
