@@ -53,28 +53,28 @@ export const LINKS: Links = [
 
 // Socials
 export const SOCIALS: Socials = [
-  {
-    NAME: "Email",
-    ICON: "email",
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
-  },
+  // {
+  //   NAME: "Email",
+  //   ICON: "email",
+  //   TEXT: "markhorn.dev@gmail.com",
+  //   HREF: "mailto:markhorn.dev@gmail.com",
+  // },
   {
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere",
+    TEXT: "KKoichi276052",
+    HREF: "https://github.com/KKoichi276052",
   },
   {
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "Koichi Kataoka",
+    HREF: "https://www.linkedin.com/in/koichi-kataoka-735b18281/",
   },
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
+    TEXT: "片岡宏一 | Koichi Kataoka",
+    HREF: "https://twitter.com/56JJuiA49svC8De",
   },
 ];
