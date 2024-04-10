@@ -85,17 +85,17 @@ const stack = [
           <p class='animated mt-3 text-2xl md:text-4xl lg:text-5xl font-bold uppercase text-black dark:text-white'>
             Software developer
           </p>
-          <!-- <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for humans.
-          </p> -->
-          <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
+          <p class='animated mt-3 text-sm md:text-base lg:text-lg opacity-75 mx-auto max-w-screen-lg'>
+            I began my professional journey as a new graduate at Rakuten. After being employed for nearly four years,  I left to pursue my long-standing interest in programming. After dedicating several months to self-intensive learning and BootCamp, I transitioned into a role as a web developer, working on a product designed to simplify and support real estate investment like calculating revenue ratio, and building plan. Passionate about leveraging technology to address real-world challenges, I am eager to see what the future holds for me in this dynamic field.
+          </p>
+          <!-- <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Read my blog
             </a>
             <a href='/career' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
               View my work
             </a>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -105,14 +105,15 @@ const stack = [
     <div class="mx-auto max-w-screen-md p-5 space-y-24 pb-16">
 
       <!-- About Section -->
-      <section class="animate">
+      <!-- <section class="animate">
         <article>
           <p>
-            I began my professional journey as a new graduate at Rakuten, where I was employed for nearly four years.Eventually, I left to pursue my long-standing interest in programming. After dedicating several months to intensive learning, I transitioned into a role as a web developer, working on a product designed to simplify asset management, with a particular emphasis on real estate investment.Passionate about leveraging technology to address real-world challenges, I am eager to see what the future holds for me in this dynamic field.
+            I began my professional journey as a new graduate at Rakuten, where I was employed for nearly four years. Eventually, I left to pursue my long-standing interest in programming. After dedicating several months to intensive learning, I transitioned into a role as a web developer, working on a product designed to simplify asset management, with a particular emphasis on real estate investment.Passionate about leveraging technology to address real-world challenges, I am eager to see what the future holds for me in this dynamic field.
           </p>
         </article>
-      </section>
+      </section> -->
 
+      
       <!-- Blog Preview Section -->
       <section class="animate">
         <div class="space-y-4">
@@ -136,31 +137,7 @@ const stack = [
         </div>
       </section>
 
-      <!-- Tech Stack Section -->
-      <!-- <section class="animate">
-        <div class="space-y-4">
-          <p class="font-semibold text-black dark:text-white">
-            Website build with
-          </p>
-          <div class="flex flex-wrap items-center gap-2 mt-5">
-            {stack.map(item => (
-              <StackCard 
-                text={item.text}
-                icon={item.icon}
-                href={item.href}
-              />
-            ))}
-          </div>
-          <div>
-            Performing reactivity and statefulness, special guest
-            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
-              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
-                SolidJS
-              </span>
-            </a>
-          </div>
-        </div>
-      </section> -->
+
 
       <!-- Project Preview Section -->
       <section class="animate">
@@ -182,6 +159,32 @@ const stack = [
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      <!-- Tech Stack Section -->
+      <section class="animate">
+        <div class="space-y-4">
+          <p class="font-semibold text-black dark:text-white">
+            Website build with
+          </p>
+          <div class="flex flex-wrap items-center gap-2 mt-5">
+            {stack.map(item => (
+              <StackCard 
+                text={item.text}
+                icon={item.icon}
+                href={item.href}
+              />
+            ))}
+          </div>
+          <div>
+            Performing reactivity and statefulness, special guest
+            <a href="https://www.solidjs.com/" target="_blank" class="w-fit group underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
+              <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
+                SolidJS
+              </span>
+            </a>
+          </div>
         </div>
       </section>
 
