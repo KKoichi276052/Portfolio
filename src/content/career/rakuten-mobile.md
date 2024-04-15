@@ -1,8 +1,8 @@
 ---
 company: "Rakuten Mobile"
 role: "RF Engineer"
-dateStart: "01/31/2023"
-dateEnd: "04/01/2019"
+dateStart: "04/01/2019"
+dateEnd: "01/31/2023"
 skills:
   - Atoll
   - Alteryx

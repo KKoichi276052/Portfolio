@@ -41,6 +41,29 @@ const stack = [
 ]
 ---
 
+<script>
+  import { stagger, spring, timeline, type TimelineDefinition } from 'motion'
+  import { loaderAnimation } from "@consts"
+
+  const cards = document.querySelectorAll('.card-animate')
+
+  const sequence = [
+    loaderAnimation,
+    [
+      cards,
+      { y: ['40%', '0%'], opacity: [0, 1] },
+      {
+        at: '-0.1',
+        duration: 0.4,
+        delay: stagger(0.3),
+        easing: spring({ velocity: 100, stiffness: 50, damping: 10 }),
+      },
+    ],
+  ]
+
+  timeline(sequence as TimelineDefinition)
+</script>
+
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
 
   <!-- Light Mode: Particles -->
@@ -112,6 +135,9 @@ const stack = [
           </p>
         </article>
       </section> -->
+
+      <!-- Dashboard section -->
+      
 
       
       <!-- Blog Preview Section -->

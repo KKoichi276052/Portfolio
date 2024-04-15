@@ -31,7 +31,7 @@ function formatWorkDate(input: Date | string) {
 
 <PageLayout title={CAREER.TITLE} description={CAREER.DESCRIPTION}>
   <TopLayout>
-    <div class="animate page-heading">
+    <div class="animate page-heading text-3xl">
       {CAREER.TITLE}
     </div>
   </TopLayout>
@@ -40,23 +40,29 @@ function formatWorkDate(input: Date | string) {
       { 
         career.map((entry) => (
           <li class="animate border-b border-black/10 dark:border-white/25 mt-4 py-8 first-of-type:mt-0 first-of-type:pt-0 last-of-type:border-none">
-            <div class="text-sm uppercase mb-4">
+            <div class="text-sm uppercase">
               {formatWorkDate(entry.data.dateStart)} - {formatWorkDate(entry.data.dateEnd)}
             </div>
-            <div class="text-black dark:text-white font-semibold">
+            <div class="text-black dark:text-white font-semibold mt-2">
               {entry.data.company}
             </div>
-            <div class="text-sm font-semibold">
+            <div class="text-sm font-semibold mt-2">
               {entry.data.role}
             </div>
-            <article class="prose dark:prose-invert">
+            <article class="prose dark:prose-invert mt-2">
               <entry.Content />
             </article>
-            <div>
-              {entry.data.skills.map((skill) => (
-                <p>skill</p>
-                ))}
-            </div>
+            <ul class="flex flex-wrap gap-1">
+              {entry.data.skills.map(
+                (
+                  tag: string // this line has an error; Parameter 'tag' implicitly has an 'any' type.ts(7006)
+                ) => (
+                  <li class="text-xs uppercase py-0.5 px-1 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
+                    {tag}
+                  </li>
+                )
+              )}
+            </ul>
           </li>
         ))
       }

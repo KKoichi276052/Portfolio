@@ -7,6 +7,13 @@ export const SITE: Site = {
   AUTHOR: "Koichi Kataoka",
 };
 
+// Loader animation
+export const loaderAnimation = [
+  ".loader",
+  { opacity: [1, 0], pointerEvents: "none" },
+  { easing: "ease-out" },
+];
+
 // Work Page
 export const CAREER: Page = {
   TITLE: "Career",
