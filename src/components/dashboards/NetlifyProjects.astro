@@ -1,0 +1,34 @@
+---
+import Arrow from "@components/utilities/Arrow.astro";
+import DashBoardCard from "./DashBoardCard.astro";
+
+  const url = 'https://api.netlify.com/api/v1/sites';
+  const token = import.meta.env.NETLIFY_TOKEN;  // Accessing environment variable
+
+  const sites = await fetch(url, {
+    method: 'GET',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+  }).then((response) => response.json());
+
+
+---
+
+<DashBoardCard title="Solo Projects" >
+	<div class="flex items-center justify-around gap-3">
+
+    <ul>
+      {sites.map(site => (
+        <li key={site.id}>
+          <a href={site.url}>{site.name}</a>
+        </li>
+      ))}
+    </ul>
+
+		<Arrow />
+		
+	</div>
+
+</DashBoardCard>
+
