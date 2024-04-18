@@ -6,6 +6,7 @@ import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
+import DashBoard from "@components/dashboards/DashBoard.astro"
 
 const posts = (await getCollection("blog"))
   .filter(post => !post.data.draft)
@@ -155,7 +156,7 @@ const stack = [
       </section> -->
 
       <!-- Dashboard section -->
-      
+      <DashBoard />
 
       
       <!-- Blog Preview Section -->

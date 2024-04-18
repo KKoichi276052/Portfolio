@@ -1,0 +1,27 @@
+---
+type Props = {
+  title: string,
+	isLink: boolean,
+	url?: string
+}
+
+const { title, isLink, url } = Astro.props
+---
+
+{
+  isLink && url ? (
+    <a
+			target="_blank"
+      href={url}
+      class="group block p-4 gap-3 items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out"
+    >
+      <div class="font-semibold text-black dark:text-white mb-4">{title}</div>
+      <slot />
+    </a>
+  ) : (
+    <div class="group p-4 gap-3 items-center border rounded-lg hover:bg-black/5 hover:dark:bg-white/10 border-black/15 dark:border-white/20 transition-colors duration-300 ease-in-out">
+      <div class="font-semibold text-black dark:text-white mb-4">{title}</div>
+      <slot />
+    </div>
+  )
+}

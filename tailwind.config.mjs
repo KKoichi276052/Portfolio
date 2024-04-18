@@ -1,13 +1,23 @@
-import defaultTheme from "tailwindcss/defaultTheme"
+import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ["class"],
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    // screens: {
+    sm: "550px",
+    //   // => @media (min-width: 640px) { ... }
+
+    //   laptop: "1024px",
+    //   // => @media (min-width: 1024px) { ... }
+
+    //   desktop: "1280px",
+    //   // => @media (min-width: 1280px) { ... }
+    // },
     extend: {
       fontFamily: {
-        "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
+        sans: ["Atkinson", ...defaultTheme.fontFamily.sans],
       },
       typography: {
         DEFAULT: {
@@ -17,10 +27,10 @@ export default {
         },
       },
       rotate: {
-        "45": "45deg",
-        "135": "135deg",
-        "225": "225deg",
-        "315": "315deg",
+        45: "45deg",
+        135: "135deg",
+        225: "225deg",
+        315: "315deg",
       },
       animation: {
         twinkle: "twinkle 2s ease-in-out forwards",
@@ -28,34 +38,34 @@ export default {
       },
       keyframes: {
         twinkle: {
-          "0%": { 
-            opacity: 0, 
-            transform: "rotate(0deg)" 
+          "0%": {
+            opacity: 0,
+            transform: "rotate(0deg)",
           },
-          "50%": { 
+          "50%": {
             opacity: 1,
-            transform: "rotate(180deg)" 
+            transform: "rotate(180deg)",
           },
-          "100%": { 
-            opacity: 0, 
-            transform: "rotate(360deg)" 
+          "100%": {
+            opacity: 0,
+            transform: "rotate(360deg)",
           },
         },
         meteor: {
-          "0%": { 
-            opacity: 0, 
-            transform: "translateY(200%)" 
+          "0%": {
+            opacity: 0,
+            transform: "translateY(200%)",
           },
-          "50%": { 
-            opacity: 1  
+          "50%": {
+            opacity: 1,
           },
-          "100%": { 
-            opacity: 0, 
-            transform: "translateY(0)" 
+          "100%": {
+            opacity: 0,
+            transform: "translateY(0)",
           },
         },
       },
     },
   },
   plugins: [require("@tailwindcss/typography")],
-}
+};
